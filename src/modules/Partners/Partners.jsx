@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Main() {
+function Partners() {
   return (
     <div>
-      Main
+      Partners
     </div>
   );
 }
 
-export default Main;
+export default Partners;

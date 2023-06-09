@@ -2,21 +2,49 @@
   "name": "gravitas",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.(js|jsx)": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.scss": [
+      "stylelint --fix --custom-syntax postcss-scss",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "clsx": "^1.2.1",
+    "eslint": "^8.42.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-webpack": "^0.13.2",
+    "eslint-plugin-no-inline-styles": "^1.0.5",
+    "husky": "^8.0.3",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.12.1",
+    "react-scripts": "5.0.1",
+    "sass": "^1.63.2",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.22.5",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "lint-staged": "^13.2.2",
+    "stylelint": "^15.7.0",
+    "stylelint-config-standard-scss": "^9.0.0",
+    "stylelint-order": "^6.0.3"
   },
   "eslintConfig": {
     "extends": [

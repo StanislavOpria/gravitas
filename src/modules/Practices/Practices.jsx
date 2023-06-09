@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Main() {
+function Practices() {
   return (
     <div>
-      Main
+      Practices
     </div>
   );
 }
 
-export default Main;
+export default Practices;

@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Main() {
+function News() {
   return (
     <div>
-      Main
+      News
     </div>
   );
 }
 
-export default Main;
+export default News;

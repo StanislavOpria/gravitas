@@ -1,0 +1,16 @@
+.Wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1024px;
+}
+
+.Link {
+  color: blue;
+  &___active {
+    color: red;
+  }
+  &___pending {
+
+  }
+}

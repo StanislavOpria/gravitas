@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Main() {
+function Clients() {
   return (
     <div>
-      Main
+      Clients
     </div>
   );
 }
 
-export default Main;
+export default Clients;
