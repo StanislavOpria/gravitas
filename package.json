@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "prepare": "husky install"
   },
   "lint-staged": {
@@ -20,48 +19,27 @@
     ]
   },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@vitejs/plugin-react-swc": "^3.3.2",
     "clsx": "^1.2.1",
-    "eslint": "^8.42.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-import-resolver-alias": "^1.1.2",
-    "eslint-import-resolver-webpack": "^0.13.2",
-    "eslint-plugin-no-inline-styles": "^1.0.5",
     "husky": "^8.0.3",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.12.1",
-    "react-scripts": "5.0.1",
     "sass": "^1.63.2",
-    "web-vitals": "^2.1.4"
+    "vite": "^4.3.9"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.22.5",
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/react": "^18.2.13",
+    "@types/react-dom": "^18.2.6",
+    "eslint": "^8.43.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.1",
     "lint-staged": "^13.2.2",
     "stylelint": "^15.7.0",
     "stylelint-config-standard-scss": "^9.0.0",
     "stylelint-order": "^6.0.3"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }
