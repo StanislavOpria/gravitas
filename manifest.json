@@ -1,14 +1,41 @@
 {
   "index.css": {
-    "file": "static/index-7aad9dd9.css",
+    "file": "static/index-6def2906.css",
     "src": "index.css"
   },
   "index.html": {
-    "css": [
-      "static/index-7aad9dd9.css"
+    "assets": [
+      "static/hero-fc47ea19.jpg",
+      "static/hero-8f922ebe.webp",
+      "static/hero@2x-cba8306a.jpg",
+      "static/hero@2x-f3ebdf83.webp",
+      "static/ProximaNovaRegular-36b59421.otf"
     ],
-    "file": "static/index-dbc83803.js",
+    "css": [
+      "static/index-6def2906.css"
+    ],
+    "file": "static/index-98a43766.js",
     "isEntry": true,
     "src": "index.html"
+  },
+  "src/fonts/ProximaNova/ProximaNovaRegular.otf": {
+    "file": "static/ProximaNovaRegular-36b59421.otf",
+    "src": "src/fonts/ProximaNova/ProximaNovaRegular.otf"
+  },
+  "src/img/desktop/hero.jpg": {
+    "file": "static/hero-fc47ea19.jpg",
+    "src": "src/img/desktop/hero.jpg"
+  },
+  "src/img/desktop/hero.webp": {
+    "file": "static/hero-8f922ebe.webp",
+    "src": "src/img/desktop/hero.webp"
+  },
+  "src/img/desktop/hero@2x.jpg": {
+    "file": "static/hero@2x-cba8306a.jpg",
+    "src": "src/img/desktop/hero@2x.jpg"
+  },
+  "src/img/desktop/hero@2x.webp": {
+    "file": "static/hero@2x-f3ebdf83.webp",
+    "src": "src/img/desktop/hero@2x.webp"
   }
 }
