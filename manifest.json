@@ -1,6 +1,6 @@
 {
   "index.css": {
-    "file": "static/index-b6583f0f.css",
+    "file": "static/index-aa3591e5.css",
     "src": "index.css"
   },
   "index.html": {
@@ -12,9 +12,9 @@
       "static/ProximaNovaRegular-36b59421.otf"
     ],
     "css": [
-      "static/index-b6583f0f.css"
+      "static/index-aa3591e5.css"
     ],
-    "file": "static/index-b1b39934.js",
+    "file": "static/index-88758c05.js",
     "isEntry": true,
     "src": "index.html"
   },
