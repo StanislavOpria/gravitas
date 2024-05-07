@@ -1,0 +1,14 @@
+{
+  "index.css": {
+    "file": "static/index-7aad9dd9.css",
+    "src": "index.css"
+  },
+  "index.html": {
+    "css": [
+      "static/index-7aad9dd9.css"
+    ],
+    "file": "static/index-dbc83803.js",
+    "isEntry": true,
+    "src": "index.html"
+  }
+}
