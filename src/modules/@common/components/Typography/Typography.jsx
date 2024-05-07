@@ -1,12 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styles from "./Typography.module.scss"; // Import CSS module
 
-function Typography() {
-  return <div></div>;
+function Typography({ variant, ...rest }) {
+  const className = `${styles.Typography} ${styles[variant]}`;
+  return <div className={className} {...rest}></div>;
 }
 
 Typography.defaultProps = {
-  component: div,
+  variant: "div",
 };
 
 Typography.propTypes = {
@@ -24,7 +26,6 @@ Typography.propTypes = {
     "caption",
     "inherit",
   ]).isRequired,
-  component: PropTypes.elementType,
 };
 
 export default Typography;

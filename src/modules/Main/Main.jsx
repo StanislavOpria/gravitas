@@ -1,5 +1,5 @@
 import React from "react";
-import Slides from "./components/Slides/Slides";
+import Hero from "./components/Hero/Hero";
 import OurPractices from "./components/OurPractices/OurPractices";
 import Partners from "./components/Partners/Partners";
 import OurClients from "./components/OurClients/OurClients";
@@ -10,7 +10,7 @@ function Main() {
     <div>
 
 
-      <Slides></Slides>
+      <Hero></Hero>
       <OurPractices></OurPractices>
       <Partners></Partners>
       <OurClients></OurClients>

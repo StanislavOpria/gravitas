@@ -1,6 +1,12 @@
+@import "src/styles/_reset.scss";
+@import "src/styles/_colors.scss";
+@import "src/styles/_fonts.scss";
+
 body {
   min-height: 100vh;
   margin: 0;
+  color: $black;
+  background-color: $white;
   font-family: "Cormorant Garamond", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

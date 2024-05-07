@@ -15,5 +15,18 @@ export const en = {
         },
       },
     },
+    main: {
+      hero: {
+        title:
+          "Legal boutique specializing in White Collar Crime and Dispute Resolution",
+        subtitle1:
+          "We are a team of expert lawyers with experience in both public and private sectors in the field of criminal law and judicial disputes",
+        subtitle2:
+          "We believe that each client's situation is unique, and therefore we do not adopt a conveyor approach",
+        subtitle3:
+          "By offering our expertise and accumulated experience, we prioritize reacting promptly to client needs and being flexible in decision-making",
+        link: "Learn more",
+      },
+    },
   },
 };

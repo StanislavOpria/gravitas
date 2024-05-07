@@ -8,31 +8,35 @@ import Practices from '../../Practices/Practices';
 
 export const routeList = [
   {
-    path: '/news/:id',
+    path: "/news/:id",
     Component: NewsPage,
   },
   {
-    path: '/news',
+    path: "/news",
     Component: News,
   },
   {
-    path: '/clients',
+    path: "/clients",
     Component: Clients,
   },
   {
-    path: '/contacts',
+    path: "/contacts",
     Component: Contacts,
   },
   {
-    path: '/partners',
+    path: "/partners",
     Component: Partners,
   },
   {
-    path: '/practices',
+    path: "/practices",
     Component: Practices,
   },
   {
-    path: '*',
+    path: "/",
+    Component: Main,
+  },
+  {
+    path: "*",
     Component: Main,
   },
 ];
