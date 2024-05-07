@@ -3,8 +3,9 @@ import PropTypes from "prop-types";
 import styles from "./Typography.module.scss"; // Import CSS module
 
 function Typography({ variant, ...rest }) {
+  const Component = variant;
   const className = `${styles.Typography} ${styles[variant]}`;
-  return <div className={className} {...rest}></div>;
+  return <Component className={className} {...rest}></Component>;
 }
 
 Typography.defaultProps = {
