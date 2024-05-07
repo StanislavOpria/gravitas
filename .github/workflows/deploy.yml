@@ -1,0 +1,32 @@
+name: Build and deploy to GitHub Pages
+
+on:
+  push:
+    branches: [dev]
+env:
+  VITE_TELEGRAM_TOKEN: ${{secrets.VITE_TELEGRAM_TOKEN}}
+  VITE_CHAT_ID: ${{secrets.VITE_CHAT_ID}}
+  SANITY_AUTH_TOKEN: ${{ secrets.VITE_ADMIN_TOKEN}}
+  VITE_ADMIN_PROJECT_ID: ${{secrets.VITE_ADMIN_PROJECT_ID}}
+  VITE_ADMIN_DATASET: ${{secrets.VITE_ADMIN_DATASET}}
+  VITE_ADMIN_API_VERSION: ${{secrets.VITE_ADMIN_API_VERSION}}
+  VITE_ADMIN_TOKEN: ${{secrets.VITE_ADMIN_TOKEN}}
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Install, build 🔧
+        run: |
+          npm install
+          npm run build
+          cp ./dist/index.html ./dist/404.html
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages
+          folder: dist
