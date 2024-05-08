@@ -4,7 +4,9 @@
   padding: 180px 214px;
   position: relative;
   overflow: hidden;
-
+  max-width: 1440px;
+  margin: 0 auto;
+  
   &::before {
     content: "";
     position: absolute;
