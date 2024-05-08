@@ -1,6 +1,6 @@
 {
   "index.css": {
-    "file": "static/index-aa3591e5.css",
+    "file": "static/index-1a6d704d.css",
     "src": "index.css"
   },
   "index.html": {
@@ -9,12 +9,15 @@
       "static/hero-8f922ebe.webp",
       "static/hero@2x-cba8306a.jpg",
       "static/hero@2x-f3ebdf83.webp",
+      "static/practices-592a07c9.png",
+      "static/practices-a0059a8b.webp",
+      "static/practices@2x-417870e4.webp",
       "static/ProximaNovaRegular-36b59421.otf"
     ],
     "css": [
-      "static/index-aa3591e5.css"
+      "static/index-1a6d704d.css"
     ],
-    "file": "static/index-88758c05.js",
+    "file": "static/index-101a5000.js",
     "isEntry": true,
     "src": "index.html"
   },
@@ -37,5 +40,17 @@
   "src/img/desktop/hero@2x.webp": {
     "file": "static/hero@2x-f3ebdf83.webp",
     "src": "src/img/desktop/hero@2x.webp"
+  },
+  "src/img/desktop/practices.png": {
+    "file": "static/practices-592a07c9.png",
+    "src": "src/img/desktop/practices.png"
+  },
+  "src/img/desktop/practices.webp": {
+    "file": "static/practices-a0059a8b.webp",
+    "src": "src/img/desktop/practices.webp"
+  },
+  "src/img/desktop/practices@2x.webp": {
+    "file": "static/practices@2x-417870e4.webp",
+    "src": "src/img/desktop/practices@2x.webp"
   }
 }
