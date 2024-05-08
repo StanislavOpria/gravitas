@@ -1,15 +1,29 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import Typography from "../../../@common/components/Typography/Typography";
+import s from "./OurPractices.module.scss";
 
 function OurPractices() {
+  const { t } = useTranslation();
   return (
-    <section>
-      <h2>Наши практики</h2>
-      <p>Мы закрываем два важный направления в вопросе утановления права</p>
-      <ul>
-        <li>Разрешение споров</li>
-        <li>Уголовное право</li>
+    <section className={s.practice}>
+      <Typography variant="h2">{t("main").practices.title}</Typography>
+      <p className={s.subtitle}>{t("main").practices.subtitle}</p>
+      <ul className={s.list}>
+        <li>
+          <Link to="/practices" className={s.link}>
+            {t("main").practices.list.item1}
+          </Link>
+        </li>
+        <li>
+          <Link to="/practices" className={s.link}>
+            {t("main").practices.list.item2}
+          </Link>
+        </li>
       </ul>
-      <img src="" alt="Весы правосудия" />
+
+      <img src="" alt={t("main").practices.imgAlt} />
     </section>
   );
 }

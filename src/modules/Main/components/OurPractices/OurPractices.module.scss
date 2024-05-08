@@ -1,0 +1,78 @@
+@import "src/styles/_colors.scss";
+
+.practice {
+  padding: 180px 214px;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../../../../img/desktop/practices.png");
+    background-image: -webkit-image-set(
+      url("../../../../img/desktop/practices.webp") 1x
+    );
+    background-size: auto 470px;
+    background-repeat: no-repeat;
+    background-position: 750px center;
+    filter: opacity(40%);
+    z-index: -1;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2) {
+    .section {
+      &::before {
+        background-image: url("../../../../img/desktop/practices@2x.jpg");
+        background-image: -webkit-image-set(
+          url("../../../../img/desktop/practices@2x.webp") 2x
+        );
+      }
+    }
+  }
+
+  .subtitle {
+    margin-top: 18px;
+    width: 416px;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 80px;
+    line-height: 1.55556;
+  }
+
+  .link {
+    padding: 20px 28px;
+    border-bottom: 1px solid rgba(128, 153, 179, 0.5);
+    border-left: 1px solid rgba(128, 153, 179, 0.5);
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 30px;
+    text-decoration: none;
+    color: $black;
+    background-color: #fafafa;
+  }
+
+  .list {
+    width: 1010px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .list li:first-child::after {
+    float: left;
+    content: " ― ― ― ― ― ― ― ― ― ― ― ― ― ― ― ― ― ― ― ― ― ― ";
+    color: $lightBlue;
+    width: 435px;
+    top: 50%;
+    z-index: -1000;
+    position: absolute;
+    font-weight: bold;
+    position: absolute;
+  }
+}

@@ -1,9 +1,9 @@
-import React from "react";
+import Typography from "../../../@common/components/Typography/Typography";
 
 function OurClients() {
   return (
     <section>
-      <h2>Наши клиенты</h2>
+                  <Typography variant="h2">Наши клиенты</Typography>
       <ul>
         <li>
           <img src="" alt="Клиент" />

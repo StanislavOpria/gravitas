@@ -1,9 +1,10 @@
-import React from "react";
+import Typography from "../../../@common/components/Typography/Typography";
 
 function OurNews() {
   return (
     <section>
-      <h2>Наши новости</h2>
+  
+                  <Typography variant="h2">Наши новости</Typography>
       <ul>
         <li>
           <p>Налоговое право</p>

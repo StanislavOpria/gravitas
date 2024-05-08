@@ -1,9 +1,9 @@
-import React from "react";
+import Typography from "../../../@common/components/Typography/Typography";
 
 function Partners() {
   return (
     <section>
-      <h2>Партнеры</h2>
+                  <Typography variant="h2">Партнеры</Typography>
       <ul>
         <li>
           <p>Дмитрий Большаков</p>

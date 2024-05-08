@@ -10,6 +10,22 @@
     color: $white;
     margin-bottom: 70px;
   }
+  &.h2 {
+    font-family: "Cormorant Garamond", sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    position: relative;
+  }
+  &.h2::after {
+    content: " ";
+    width: 388px;
+    height: 2px;
+    display: block;
+    bottom: -10px;
+    position: absolute;
+   opacity: 0.2;
+    background-color: $lightGrey;
+  }
 }
 
 // "h1",

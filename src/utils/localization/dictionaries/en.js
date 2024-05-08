@@ -27,6 +27,14 @@ export const en = {
           "By offering our expertise and accumulated experience, we prioritize reacting promptly to client needs and being flexible in decision-making",
         link: "Learn more",
       },
+      practices: {
+        title: "Practices",
+        subtitle: "We cover two important areas in establishing rights",
+        list: {
+          item1: "Dispute Resolution",
+          item2: "Criminal Law",
+        }
+      },
     },
   },
 };
